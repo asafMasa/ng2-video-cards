@@ -1,0 +1,12 @@
+<mat-card class="my-mat-card" (click)="onCardClicked()">
+  <mat-card-header>
+    <!--<img mat-card-avatar src="https://source.unsplash.com/random/200x200">-->
+    <img mat-card-avatar src="{{avatarImageSrc}}">
+    <mat-card-title>{{cardTitle}}</mat-card-title>
+    <mat-card-subtitle>{{cardSubtitle}}</mat-card-subtitle>
+  </mat-card-header>
+  <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+  <mat-card-content class="my-mat-card-content">
+    <img src="{{appImageSrc}}"/>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+}
+
+.container-item {
+  margin: 5px;
+}
+
+.banner {
+  width: -webkit-fill-available;
+  height: 440px;
+  background: url(../assets/weemee.png) ;
+  background-size: cover;
+  overflow: hidden;
+}

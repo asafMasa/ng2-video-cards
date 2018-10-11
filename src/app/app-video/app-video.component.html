@@ -1,0 +1,8 @@
+<video *ngIf="isHoveringOverDrop" autoplay controls loop>
+  <source [src]="moviePath" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<button (click)="close()" class="close" type="button">
+  <span>×</span>
+</button>

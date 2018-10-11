@@ -1,0 +1,32 @@
+<div class="example-container">
+  <mat-toolbar color="primary" class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    <h1 class="example-app-name">חנות אפליקציות</h1>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="2">
+    <mat-sidenav #snav mode='over' fixedTopGap="56">
+      <button mat-button>אפליקציות</button>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <mat-tab-group>
+        <mat-tab label="המומלצים">
+          <div ngClass="container">
+            <!--<app-video></app-video>-->
+            <app-details appImageSrc="../../assets/logo.svg" avatarImageSrc="../../assets/logo.svg" cardTitle="Ansyn" cardSubtitle="A imagery management application, for viewing and managing imagery from any source, with many tools to enhance the experience" moviePath="http://www.html5videoplayer.net/videos/toystory.mp4" ngClass="container-item"></app-details>
+            <app-details appImageSrc="../../assets/forkme.svg" avatarImageSrc="../../assets/forkme.svg" cardTitle="test 1" cardSubtitle="test" moviePath="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" ngClass="container-item"></app-details>
+            <app-details appImageSrc="../../assets/v.png" avatarImageSrc="../../assets/v.png" cardTitle="test 2" cardSubtitle="test" moviePath="http://www.html5videoplayer.net/videos/toystory.mp4" ngClass="container-item"></app-details>
+            <app-details appImageSrc="../../assets/weemee.png" avatarImageSrc="../../assets/weemee.png" cardTitle="test 3" cardSubtitle="test" moviePath="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" ngClass="container-item"></app-details>
+          </div>
+        </mat-tab>
+        <mat-tab label="הזנקות">
+          <app-details launchURL="http://www.ansyn.io" appImageSrc="../../assets/logo.svg" avatarImageSrc="../../assets/logo.svg" cardTitle="Ansyn" cardSubtitle="A imagery management application, for viewing and managing imagery from any source, with many tools to enhance the experience" moviePath="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" ngClass="container-item"></app-details>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <!--<div ngClass="banner"></div>-->
+</div>
+
+<app-video></app-video>
